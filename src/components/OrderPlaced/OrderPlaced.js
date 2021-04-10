@@ -3,7 +3,7 @@ import React from 'react';
 const OrderPlaced = () => {
     return (
         <div>
-            <h1>Your Order Has Been Placed...</h1>
+            <h1>Your Order Has Been Placed!! Hurray!</h1>
         </div>
     );
 };
