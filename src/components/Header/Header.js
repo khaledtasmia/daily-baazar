@@ -27,12 +27,12 @@ const Header = () => {
                             </Link>
                             <Link style={{ textDecoration: "none" }} to="/orders">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="#destination"><h6>Orders</h6></a>
+                                    <a class="nav-link active" href="#orders"><h6>Orders</h6></a>
                                 </li>
                             </Link>
                             <Link style={{ textDecoration: "none" }} to="/admin">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="#blog"><h6>Admin</h6></a>
+                                    <a class="nav-link active" href="#admin"><h6>Admin</h6></a>
                                 </li>
                             </Link>
                             <Link style={{ textDecoration: "none" }} to="/deals">

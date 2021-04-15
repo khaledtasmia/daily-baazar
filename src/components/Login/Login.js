@@ -153,7 +153,7 @@ const Login = () => {
                         <p style={{ marginTop: "5px" }}>Don't you have an account? <Link to="/create" className="text-success">Create an account.</Link></p>
                     </form>
                 </div>
-                <div>
+                <div style={{marginRight: "170px"}}>
                     <h6>Or</h6>
                     <button onClick={handleFbSignIn} style={fbButtonStyle}>Continue With Facebook</button>
                     <br />
