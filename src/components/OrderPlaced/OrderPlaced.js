@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { UserContext } from '../../App';
 import Header from '../Header/Header';
-import '../../../src/App.css';
+import '../../App.css';
 import { useForm } from "react-hook-form";
 
 const OrderPlaced = () => {
@@ -27,7 +27,6 @@ const OrderPlaced = () => {
 
     const style = {
         marginTop: "100px",
-        marginLeft: "350px",
         border: "1px solid black",
         borderRadius: "5px",
         width: "450px",
@@ -40,10 +39,10 @@ const OrderPlaced = () => {
             <div>
                 <Header></Header>
             </div>
-            <div className="App">
+            <div className="d-flex justify-content-center">
                 <div style={style}>
-                    <h3>Order Confirmation</h3>
-                    <form onSubmit={handleSubmit(onSubmit)}>
+                    <h3 className="text-center">Order Confirmation</h3>
+                    <form className="text-center" onSubmit={handleSubmit(onSubmit)}>
                         <input style={{ marginTop: "5px" }} defaultValue={loggedInUser.name} name="name" placeholder="Full Name" required></input>
                         <br />
                         <input style={{ marginTop: "5px" }} defaultValue={loggedInUser.email} name="email" placeholder="Email Address" required></input>

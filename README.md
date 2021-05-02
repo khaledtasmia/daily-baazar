@@ -17,3 +17,7 @@ If you click on a product, you will go to checkout page. But first you have to l
 ## Orders
 
 In orders, you will find the information of yours. You have to login in here also.
+
+## Admin
+
+I am unable to function this section. 

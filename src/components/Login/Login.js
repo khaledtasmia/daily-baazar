@@ -6,11 +6,12 @@ import firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from '../../firebase.config';
 import { UserContext } from '../../App';
+import '../../App.css';
 
 const Login = () => {
 
-    const[loggedInUser, setLoggedInUser] = useContext(UserContext);
-    
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+
     const history = useHistory()
     const location = useLocation();
     const { from } = location.state || { from: { pathname: "/checkOut/:id" } };
@@ -139,26 +140,9 @@ const Login = () => {
                 <Header></Header>
             </div>
             <div className="App">
-                <div style={style}>
-                    <h3>Login</h3>
-                    <form onSubmit={handleSubmit}>
-                        <input style={{ marginTop: "5px" }} type="text" name="email" onBlur={handleBlur} placeholder="Email" required></input>
-                        <br />
-                        <input style={{ marginTop: "5px" }} type="password" name="password" onBlur={handleBlur} placeholder="Password" required></input>
-                        <br />
-                        <input style={{ marginTop: "5px" }} type="checkbox" name="check" id="" />
-                        <label htmlFor="check" style={{ marginLeft: "3px", marginRight: "58px" }}>Remember Me</label>
-                        <br />
-                        <input style={{ marginTop: "10px", width: "180px" }} className="btn btn-success" type="button" value="Login"></input>
-                        <p style={{ marginTop: "5px" }}>Don't you have an account? <Link to="/create" className="text-success">Create an account.</Link></p>
-                    </form>
-                </div>
-                <div style={{marginRight: "170px"}}>
-                    <h6>Or</h6>
-                    <button onClick={handleFbSignIn} style={fbButtonStyle}>Continue With Facebook</button>
-                    <br />
-                    <button onClick={handleGoogleSignIn} style={fbButtonStyle}>Continue With Google</button>
-                </div>
+                <button onClick={handleFbSignIn} style={fbButtonStyle}>Continue With Facebook</button>
+                <br />
+                <button onClick={handleGoogleSignIn} style={fbButtonStyle}>Continue With Google</button>
             </div>
         </div>
     );
